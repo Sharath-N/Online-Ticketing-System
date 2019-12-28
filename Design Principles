@@ -1,0 +1,40 @@
+DESIGN PRINCIPLES
+
+Single Responsibility Principle 
+           “A class should have single responsibility that denotes it should be considered having one reason to change.”
+Our system abides by the Principle of Single Responsibility.
+
+Open-Close Principle 
+         “Software entities like classes, modules, and functions should be open for extension and closed for modification.”
+The system abides by Open-Closed Principle.
+
+Liskov’s Substitution Principle
+     “Derived Types must be completely substitutable for base types”, its an extension of the Open-Closed Principle.
+Violated because there are different representation of Child Classes [Driver and Customer].
+
+Interface Segregation Principle
+          “Client should not be forced to depend upon the interfaces they do not use.”
+The system violates this principle because driver, customer and CustomerService provider has a single interface to login.
+
+Dependency Inversion Principle 
+	“High-Level modules should not depend on low-level modules. Both should depend on abstractions.”
+It abides by the Dependency Inversion Principle as interface is introduced between High-Level Modules and Low-Level Modules.
+
+
+
+DESIGN PRINCIPLES
+
+Information Expert
+	This principle is not violated as responsibilities are assigned to classes keeping in mind the information they possess.
+
+Creator
+	This principle is not violated as the Customer is responsible for instantiating the Ticket object.
+
+Low Coupling
+	This principle is not violated as the dependency of any Module B on any Module A is minimized. Ex: Dependency of Customer and Ticket.
+
+Controller
+	This principle is violated as there is no distinguishing factor between UI and domain object models.
+
+High Cohesion
+	This principle is violated in our class diagram. Ex: Customer module.
